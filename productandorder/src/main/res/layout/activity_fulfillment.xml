@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order.Fulfillment">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/white"
+            app:titleTextColor="@color/black"
+            app:title="Payment status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@id/appbar"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                app:buttonTint="@color/colorPrimary"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="0dp"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+            </com.google.android.material.checkbox.MaterialCheckBox>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:text="Awaiting payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+                <TextView
+                    android:text="The default status for all new orders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+                <View
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gray_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                app:buttonTint="@color/colorPrimary"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="0dp"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+            </com.google.android.material.checkbox.MaterialCheckBox>
+
+            <LinearLayout
+
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:text="Processing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+                <TextView
+
+                    android:text="The order fulfillment has started"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+                <View
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gray_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                app:buttonTint="@color/colorPrimary"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="0dp"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+            </com.google.android.material.checkbox.MaterialCheckBox>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:text="Shipped"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+                <TextView
+
+                    android:text="The order has shipped end is on its way to the customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+                <View
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gray_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                app:buttonTint="@color/colorPrimary"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="0dp"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+            </com.google.android.material.checkbox.MaterialCheckBox>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:text="Delivered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+                <TextView
+                    android:text="The order is delivered to the customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+                <View
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gray_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                app:buttonTint="@color/colorPrimary"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="0dp"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+            </com.google.android.material.checkbox.MaterialCheckBox>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:text="Will not deliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+                <TextView
+                    android:text="The order will not ship to the customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+                <View
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gray_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                app:buttonTint="@color/colorPrimary"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="0dp"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+            </com.google.android.material.checkbox.MaterialCheckBox>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:text="Returned"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+                <TextView
+                    android:text="The order has been returned"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+                <View
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gray_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
