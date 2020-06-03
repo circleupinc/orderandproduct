@@ -1,0 +1,3 @@
+rootProject.name='PorductAndOrder'
+include ':app'
+include ':productandorder'

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6C63FF</color>
+    <color name="colorPrimaryDark">#6159e5</color>
+    <color name="colorAccent">#6C63FF</color>
+
+
+    <!--colors for light mode-->
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+
+    <color name="gray_light">#DEDEDE</color>
+
+
+</resources>

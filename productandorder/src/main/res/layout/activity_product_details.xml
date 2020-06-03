@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product.ProductDetails">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:elevation="0dp"
+        android:id="@+id/product_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                app:title="Name"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:layout_marginEnd="15dp"
+                android:padding="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/share"
+                android:tint="@color/colorPrimary"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+
+
+            </ImageView>
+
+        </RelativeLayout>
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_below="@id/product_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <RelativeLayout
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/name_arrow"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:text="Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:text="SKU 001"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/name_arrow"
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:background="@color/gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+
+            </View>
+
+
+
+            <HorizontalScrollView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/select_btn"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp">
+
+
+                        <ImageView
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/camera"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/upload_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </HorizontalScrollView>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="17dp"
+                android:id="@+id/price_section"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/price_arrow"
+                    android:id="@+id/price_text"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:text="Price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:text="BDT 200"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/price_arrow"
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:background="@color/gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+
+            </View>
+
+
+            <RelativeLayout
+                android:id="@+id/Stock_section"
+                android:paddingEnd="10dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/stock_arrow"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:text="Stock control"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:text="In stock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/stock_arrow"
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:background="@color/gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+
+            </View>
+
+
+
+            <RelativeLayout
+
+                android:id="@+id/availability_section"
+                android:paddingEnd="12dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Switch
+                    android:textSize="16sp"
+                    android:text="Availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Switch>
+
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:background="@color/gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+
+            </View>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:tint="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:src="@drawable/document"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:textStyle="normal"
+                    android:layout_margin="15dp"
+                    android:gravity="start"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:text="ADD DESCRIPTION"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="Categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="@color/gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+
+            </View>
+
+
+            <RelativeLayout
+
+                android:paddingEnd="12dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Switch
+                    android:textSize="16sp"
+                    android:text="Feature on homepage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Switch>
+
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:background="@color/gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+
+            </View>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:tint="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <TextView
+                    android:textStyle="normal"
+                    android:layout_margin="15dp"
+                    android:gravity="start"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:text="ASSIGN PRODUCT TO CATEGORIES"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
